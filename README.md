@@ -314,7 +314,8 @@ never advice from this app.
 
 ### Help & docs
 
-**Help & docs ↗** (on the **More** screen and at the bottom of **Data & settings**) opens
+**Documentation ↗** (last item in the computer's left menu), **Help & docs ↗** (on the
+phone's **More** screen) and the same link at the bottom of **Data & settings** open
 this guide on GitHub in a new tab.
 
 ### History

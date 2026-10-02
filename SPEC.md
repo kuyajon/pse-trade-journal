@@ -103,7 +103,7 @@ The app works on a computer, a tablet and a phone.
   Log, Open, Watchlist, More. At 900 px and wider, a sticky full-height left sidebar (a 220 px grid column)
   with the brand name on top and these entries in order: Summary, Log, Open,
   Closed, Watchlist, Universe, AI Help, Update prices, History, Data & settings.
-  The More tab opens a list of the screens not in the tab bar (Update prices,
+  On a computer the sidebar also ends with an external **Documentation ↗** link (same address as Help & docs ↗, new tab, never active). The More tab opens a list of the screens not in the tab bar (Update prices,
   Closed, Universe, AI Help, History, Data & settings, plus an external **Help & docs ↗** link), each with a one-line description under the heading "More" (Update prices: "Type prices for your whole universe and open positions at once"; Closed: "Your finished trades and how they turned out"; Universe: "Tag the stocks you watch for each horizon"; AI Help: "Copy-and-paste prompts for your own AI chat"; History: "Every trade, dividend and cash entry; edit or delete"; Data & settings: "Backup, import, CSV, allocation, commission, erase"; Help & docs ↗: "How it works, glossary and source code on GitHub (opens in a new tab)", a link to https://github.com/kuyajon/pse-trade-journal that opens in a new tab with `rel="noopener noreferrer"` and is never marked active); the More tab shows as active on any of those screens.
 - **Content.** One column, `max-width` 1100 px, padding 16 px (24/32 px on wide
   screens), with room at the bottom for the tab bar. Pairs of cards sit side by
@@ -955,7 +955,7 @@ you type a confirmation." when there is data). **Erase everything** (see below).
 **Privacy** (data lives only on this device; no server, account or analytics; the CSP
 blocks background network requests; broker statements are the official record; not
 financial advice) and a version line: "Pinoy Trade Journal 1.0.0 · data version 1 ·
-PSE symbol list dated <date> (N symbols) · MIT license · **Help & docs ↗**" (the same external link as on More). The two **Chart ↗** links and these two **Help & docs ↗** links are the only links that leave the app.
+PSE symbol list dated <date> (N symbols) · MIT license · **Help & docs ↗**" (the same external link as on More). Chart ↗ and the Documentation ↗ / Help & docs ↗ links (sidebar, More, this line) are the only links that leave the app.
 
 Texts: the Backup card hints are "Browser storage can be cleared by the browser or by you. A backup file is the real safety net. Keep it somewhere else too (Drive, email to yourself)." and "Import replaces everything after showing you what's in the file. CSV is for Excel or Google Sheets and can't be imported back."; the commission hint is "Most brokers charge 0.25% with no minimum. If yours has one (e.g. BPI Trade), enter it; the estimate then uses whichever is larger." (blank counts as 0); the band field is "Band (± percentage points)". If only some of the four allocation boxes are blank, the blanks count as 0.
 
