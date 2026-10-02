@@ -70,7 +70,7 @@ uploaded anywhere. You don't have to take that on trust: near the top of
 It tells the browser to block the page from loading or sending anything in the
 background: no scripts or fonts from elsewhere, no fetch or XHR, no images, no
 form posts. The page has no code that sends your data anywhere, and the browser
-enforces that for everything except you clicking a link (such as Chart ↗). The whole app is that
+enforces that for everything except you clicking a link (Chart ↗ and Help & docs ↗). The whole app is that
 one file, with no build step, so "view source" shows you exactly what runs.
 
 ## Getting started
@@ -311,6 +311,11 @@ never advice from this app.
   business qualities and estimate a fair value. It's a starting point for your own
   research; keep asking follow-up questions, check the numbers yourself, and then
   record your own buy-below, reasons and notes.
+
+### Help & docs
+
+**Help & docs ↗** (on the **More** screen and at the bottom of **Data & settings**) opens
+this guide on GitHub in a new tab.
 
 ### History
 

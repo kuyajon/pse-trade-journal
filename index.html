@@ -2874,7 +2874,7 @@ VIEWS.data = D => {
   <section class="card info"><h2>Privacy</h2>
     <p>Your data lives only on this device, in this browser's storage. There's no server, account or analytics. The page's Content-Security-Policy tells the browser to block the page from loading anything or sending data in the background (no fetch, forms, images or scripts), so it can't send your data anywhere even by mistake.</p>
     <p>Your broker's statements are the official record. This is a personal log, not financial advice.</p>
-    <p class="hint">Pinoy Trade Journal ${APP_VERSION} · data version ${DATA_VERSION} · PSE symbol list dated ${fmtDate(SYMBOLS_DATE)} (${BUNDLED.size} symbols) · MIT license</p></section>`;
+    <p class="hint">Pinoy Trade Journal ${APP_VERSION} · data version ${DATA_VERSION} · PSE symbol list dated ${fmtDate(SYMBOLS_DATE)} (${BUNDLED.size} symbols) · MIT license · <a class="ext" href="https://github.com/kuyajon/pse-trade-journal" target="_blank" rel="noopener noreferrer">Help &amp; docs ↗</a></p></section>`;
 };
 MOUNTS.data = () => {
   const f = $('#f-settings');
@@ -2908,7 +2908,8 @@ VIEWS.more = () => `<h1>More</h1><section class="card more-list">
   <a href="#universe">Universe<small>Tag the stocks you watch for each horizon</small></a>
   <a href="#ai">AI Help<small>Copy-and-paste prompts for your own AI chat</small></a>
   <a href="#history">History<small>Every trade, dividend and cash entry; edit or delete</small></a>
-  <a href="#data">Data &amp; settings<small>Backup, import, CSV, allocation, commission, erase</small></a></section>`;
+  <a href="#data">Data &amp; settings<small>Backup, import, CSV, allocation, commission, erase</small></a>
+  <a href="https://github.com/kuyajon/pse-trade-journal" target="_blank" rel="noopener noreferrer">Help &amp; docs ↗<small>How it works, glossary and source code on GitHub (opens in a new tab)</small></a></section>`;
 
 async function eraseAll() {
   const m = openModal(`<h2>Erase everything?</h2><p>This deletes all entries, plans, tags, prices and settings in this browser. It can't be undone.${fileWarn()}</p>
