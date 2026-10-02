@@ -632,7 +632,8 @@ For a broker that has one (e.g. BPI Trade), the user sets it on Data & settings.
   **Clear sample data** button (confirm "Clear sample data?" / "Removes the sample portfolio so you can start your own log." with buttons **Clear** and Cancel; then everything is erased, the app goes to Summary and shows "Sample data cleared").
 - **Footer** on every screen: "Your data lives only on this device, in this
   browser. Your broker's statements are the official record. Not financial
-  advice."
+  advice. · Pinoy Trade Journal v<APP_VERSION>" (for example "v1.0.0"; the same
+  version as the line on Data & settings)
 - **Confirm boxes** have a title, text, a button with its own label ("Delete", "Clear", "Replace", "OK"; red only when destructive) and Cancel.
 - **Screen state.** Every change re-renders the whole screen, but forms don't re-render while typing (they update only their hints, context and warnings). Remembered for the session, not saved, lost on reload: the Watchlist chip, Closed period, horizon and page, History type and ticker, Universe search, sector and tagged-only, the Find-stocks ticks and yield, expanded Open rows and the current Log mode. Not remembered: the collapsed AI Help cards, reply boxes and expanded Closed rows (a re-render closes them again).
 
