@@ -7,7 +7,7 @@ you, without flattery, how you're really doing. Before each new position you
 choose a horizon (Long term, Mid term or Trading) and write down a plan. When
 you sell, you give a reason. Afterwards you can see whether you followed the plan.
 
-**Open it:** https://kuyajon.com/pse-trade-journal/ · [Source code on GitHub](https://github.com/kuyajon/pse-trade-journal)
+**Open it:** https://kuyajon.github.io/pse-trade-journal/ · [Source code on GitHub](https://github.com/kuyajon/pse-trade-journal)
 
 **Who it's for**
 
@@ -77,7 +77,7 @@ one file, with no build step, so "view source" shows you exactly what runs.
 
 ### Open it
 
-- **Any browser:** go to https://kuyajon.com/pse-trade-journal/. Current Chrome, Edge, Safari and
+- **Any browser:** go to https://kuyajon.github.io/pse-trade-journal/. Current Chrome, Edge, Safari and
   Firefox all work, on a computer or a phone.
 - **iPhone or iPad:** open the link in Safari, tap **Share**, then
   **Add to Home Screen**, and from then on open the journal from that icon.
@@ -344,7 +344,7 @@ so keep backups:
 
 ### A downloaded copy keeps separate data
 
-The website link and a downloaded `index.html` are different places to your
+The GitHub Pages link and a downloaded `index.html` are different places to your
 browser, so each keeps its own data. To move from one to the other, Export
 in one and Import in the other. The same goes for Safari versus the Home Screen app
 on an iPhone, and for two different browsers.

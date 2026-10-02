@@ -57,11 +57,11 @@ Rules for keeping it true:
 - **Public GitHub repo**, written from scratch. It shares no code, history or data
   with any other project. Repo `kuyajon/pse-trade-journal`. The repo holds
   `index.html`, `README.md`, `SPEC.md` and `LICENSE`.
-- **kuyajon.com** serves `index.html` at
-  `https://kuyajon.com/pse-trade-journal/`. That is the one supported
+- **GitHub Pages** serves `index.html` at
+  `https://kuyajon.github.io/pse-trade-journal/`. That is the one supported
   address. The hosted file is exactly the file in the repo.
 - **GitHub Releases** attach the same file for people who want to run it offline
-  from disk. The README warns that a downloaded copy and the website link keep
+  from disk. The README warns that a downloaded copy and the Pages link keep
   separate data (use Export and Import to move between them).
 - **License:** MIT.
 - **Commits** use the GitHub no-reply email.
