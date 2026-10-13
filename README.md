@@ -114,7 +114,8 @@ Don't start by buying. Start by deciding what you are willing to buy.
    Optional: **AI Help → Find stocks to research** writes a prompt you paste into
    your favorite AI (ChatGPT, Claude, Gemini or any other), then you paste its
    list back into **Import list**. You can also just type the tickers yourself.
-2. **Study each stock you like.** Open it on the Watchlist and tap **Research**.
+2. **Study each stock you like.** Tap **Research** on it in the Universe or
+   the Watchlist (no tag needed first).
    Record your own reasons and notes. If you don't know how to study a company,
    **AI Help → Research one stock** writes a starter prompt for you.
 3. **Set a buy-below price.** Decide the price at or under which you would buy.

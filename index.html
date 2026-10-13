@@ -2616,7 +2616,7 @@ function uListHTML() {
     if (s.custom) b.push('custom');
     if (!s.bundled) b.push('notlisted');
     const ctrl = s.custom ? `<button class="btn link small" data-act="sym-edit" data-t="${s.ticker}">Edit</button><button class="btn link small" data-act="sym-del" data-t="${s.ticker}"${used.has(s.ticker) ? ' title="Used by trades or dividends"' : ''}>Delete</button>` : '';
-    return `<div class="lrow"><div class="main"><b>${s.ticker}</b> ${badgeHTML(b)}<div class="sub">${esc(s.name || '—')}${s.sector ? ' · ' + esc(s.sector) : ''}${s.rate !== 10 ? ` · dividend tax ${s.rate}%` : ''} ${chartLink(s.ticker)} ${ctrl}</div></div>
+    return `<div class="lrow"><div class="main"><b>${s.ticker}</b> ${badgeHTML(b)}<div class="sub">${esc(s.name || '—')}${s.sector ? ' · ' + esc(s.sector) : ''}${s.rate !== 10 ? ` · dividend tax ${s.rate}%` : ''} ${chartLink(s.ticker)} <button class="btn link ext" data-act="research" data-t="${s.ticker}">Research</button> ${ctrl}</div></div>
       <div class="nowrap">${HORIZONS.map(h => `<button class="tagbtn" data-act="utag" data-t="${s.ticker}" data-h="${h}" aria-pressed="${tags(s.ticker).includes(h)}" title="${HL[h]}">${h === 'long' ? 'Long' : h === 'mid' ? 'Mid' : 'Trading'}</button>`).join(' ')}</div></div>`;
   }).join('');
 }

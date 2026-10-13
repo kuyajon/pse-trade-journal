@@ -912,7 +912,7 @@ watchlist entry, not an intention to buy. Buying outside a horizon's universe is
 allowed but marked off-list." The count tagged per horizon. A toolbar: search (ticker
 or name contains), sector (All sectors, the seven sectors, Unknown), **Tagged only**,
 **Add symbol**, **Import list**. The list shows every symbol (bundled, custom, plus
-any traded or tagged ticker not in the list): ticker, badges (Custom for your custom symbols; Not in current PSE list for any symbol not in the bundled list, so every custom symbol shows both), name · sector · "dividend tax N%" (only if not 10), the chart link, Edit /
+any traded or tagged ticker not in the list): ticker, badges (Custom for your custom symbols; Not in current PSE list for any symbol not in the bundled list, so every custom symbol shows both), name · sector · "dividend tax N%" (only if not 10), the chart link, a **Research** link (opens the Research popup for any symbol, tagged or not, so you can research before tagging), Edit /
 Delete for custom symbols, and three toggle buttons **Long**, **Mid**, **Trading**
 that tag or untag immediately (counts update in place). Below: "PSE symbol list dated <date>: N symbols." The heading is "Universe"; the count line reads "Long term: n · Mid term: n · Trading: n"; the search placeholder is "Search ticker or name"; the list is sorted by ticker; no match says "No symbols match."; the toggle buttons' tooltips are "Long term", "Mid term", "Trading"; the filters are remembered while the app stays open. Deleting a custom symbol asks "Delete T?" / "The custom symbol and its universe tags will be removed." and toasts "Symbol deleted".
 
