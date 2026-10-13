@@ -1018,7 +1018,7 @@ function banners() {
   return h;
 }
 function footer() {
-  return `<footer>Your data lives only on this device, in this browser. Your broker's statements are the official record. Not financial advice. A learning example, not tested extensively: take it as inspiration and build your own (<a class="ext" href="https://github.com/kuyajon/pse-trade-journal" target="_blank" rel="noopener noreferrer">source on GitHub ↗</a>). · Pinoy Trade Journal v${APP_VERSION}</footer>`;
+  return `<footer>Your data lives only on this device, in this browser. Your broker's statements are the official record. Not financial advice. A learning example, written by AI and not reviewed or tested extensively: take it as inspiration and build your own (<a class="ext" href="https://github.com/kuyajon/pse-trade-journal" target="_blank" rel="noopener noreferrer">source on GitHub ↗</a>). · Pinoy Trade Journal v${APP_VERSION}</footer>`;
 }
 let toastTimer;
 function toast(msg) {
@@ -1253,7 +1253,7 @@ function posRows(p) {
   const status = badgeHTML(b);
   return `<tbody><tr class="click ${cls_}" data-act="pos-toggle" data-id="${p.id}">
     <td class="chev"><button type="button" class="chev-btn" data-act="pos-toggle" data-id="${p.id}" aria-expanded="${open}" aria-label="Show details for ${esc(p.ticker)}">${open ? '▾' : '▸'}</button></td>
-    <td><b>${esc(p.ticker)}</b> ${chartLink(p.ticker)}<div class="hint"><span class="nm" title="${esc(p.info.name)}">${esc(shortName(p.info.name))}</span></div></td>
+    <td><b>${esc(p.ticker)}</b> ${chartLink(p.ticker)} <button class="btn link ext" data-act="research" data-t="${esc(p.ticker)}">Research</button><div class="hint"><span class="nm" title="${esc(p.info.name)}">${esc(shortName(p.info.name))}</span></div></td>
     <td class="num">${fmtShares(p.held)}</td>
     <td class="num">${fmtPrice(p.costC / p.held / 100)}</td>
     <td class="num"><button class="btn link" style="padding:0;font-weight:600" data-act="price" data-t="${p.ticker}">${pr ? fmtPrice(px) : 'Enter price'}</button>${pr ? `<div class="hint">${fmtDate(pr.as_of)}${p.stale ? ' ' + badgeHTML(['stale']) : ''}</div>` : ''}</td>
@@ -3290,7 +3290,11 @@ document.addEventListener('click', e => {
   const g = e.target.closest('[data-go]');
   if (g) { e.preventDefault(); closeModal(); go(g.dataset.go); return; }
   const a = e.target.closest('[data-act]');
-  if (a && ACTS[a.dataset.act] && !a.disabled) { e.preventDefault(); ACTS[a.dataset.act](a, e); }
+  if (a && ACTS[a.dataset.act] && !a.disabled) {
+    const link = e.target.closest('a[href]'); // a real link inside an action row (e.g. Chart ↗) must navigate
+    if (link && link !== a && a.contains(link)) return;
+    e.preventDefault(); ACTS[a.dataset.act](a, e);
+  }
 });
 $('#import-file').addEventListener('change', e => { const f = e.target.files[0]; if (f) importFile(f); });
 window.addEventListener('hashchange', () => {

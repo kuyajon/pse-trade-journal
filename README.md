@@ -1,6 +1,6 @@
 # Pinoy Trade Journal
 
-> **Please read first:** the author has not tested this extensively, and it is not meant to be used as-is for your real money decisions. Its purpose is to show Pinoy investors that they should log their trades and keep a journal. Treat it as inspiration and build your own version that fits how you invest. It is not financial advice.
+> **Please read first:** this app was written with AI assistance (Claude Code), and the author has not read or reviewed the code line by line. It has not been tested extensively, so its numbers may be wrong. It is not meant to be used as-is for your real money decisions, and it is not financial advice. Its purpose is to show Pinoy investors that they should log their trades and keep a journal. Treat it as inspiration and build your own version that fits how you invest.
 
 A free, open-source trading journal for Philippine Stock Exchange (PSE) investors.
 
