@@ -1,5 +1,7 @@
 # Pinoy Trade Journal
 
+> **Please read first:** the author has not tested this extensively, and it is not meant to be used as-is for your real money decisions. Its purpose is to show Pinoy investors that they should log their trades and keep a journal. Treat it as inspiration and build your own version that fits how you invest. It is not financial advice.
+
 A free, open-source trading journal for Philippine Stock Exchange (PSE) investors.
 
 You log what you actually did (deposits, buys, sells, dividends) and it shows
